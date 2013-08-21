@@ -172,12 +172,6 @@ def main():
 
     classif = RandomForestClassifier(n_estimators=500, criterion='entropy',
                                      random_state=np.random.RandomState(0)) 
-
-    rowinds = range(xtrain.shape[0])
-    random.shuffle(rowinds)
-    xtrain = xtrain[rowinds,:]
-    ytrain = ytrain[rowinds,:]
-
     classif.fit(xtrain, ytrain)
 
     # Test
