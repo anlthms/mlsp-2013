@@ -5,8 +5,6 @@ import matplotlib.image as mpimg
 from sklearn.ensemble import RandomForestClassifier
 
 nclasses = 19
-nlocs = 13
-nclustlocs = 6
 
 def binencode(ls):
     ret = np.zeros(nclasses * len(ls))
